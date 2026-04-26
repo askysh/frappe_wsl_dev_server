@@ -1,0 +1,19 @@
+# Force LF on shell scripts even when checked out on Windows.
+# Bash refuses to run scripts with CRLF (#!/usr/bin/env bash\r is unparseable).
+*.sh        text eol=lf
+
+# PowerShell is fine with either, but CRLF is the Windows convention.
+*.ps1       text eol=crlf
+
+# Markdown / config files: native line endings, no surprises on diff.
+*.md        text
+*.yml       text
+*.yaml      text
+*.json      text
+*.toml      text
+
+# Binary types we might add later — never auto-convert.
+*.png       binary
+*.jpg       binary
+*.pdf       binary
+*.deb       binary

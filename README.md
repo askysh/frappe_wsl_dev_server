@@ -40,7 +40,7 @@ Clone this repo onto the Windows side:
 
 ```powershell
 git clone https://github.com/askysh/frappe_wsl_dev_server.git
-cd "Frappe-w-WSL-on-Windows"
+cd "frappe_wsl_dev_server"
 ```
 
 Open **Windows PowerShell as Administrator**, navigate to the cloned folder,
@@ -66,7 +66,7 @@ dependency install:
 
 ```bash
 cd ~
-bash /mnt/c/path/to/Frappe-w-WSL-on-Windows/01-wsl-system-deps.sh
+bash /mnt/c/path/to/frappe_wsl_dev_server/01-wsl-system-deps.sh
 ```
 
 `mysql_secure_installation` will prompt interactively the first time. The
@@ -77,7 +77,7 @@ When script `01` ends with `All checks passed`, run script `02` to install
 Frappe + ERPNext:
 
 ```bash
-bash /mnt/c/path/to/Frappe-w-WSL-on-Windows/02-wsl-frappe-install.sh
+bash /mnt/c/path/to/frappe_wsl_dev_server/02-wsl-frappe-install.sh
 ```
 
 Script `02` will prompt twice during `bench new-site`: once for the MariaDB

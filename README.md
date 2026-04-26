@@ -39,7 +39,7 @@ Not required: Windows Pro, Hyper-V toggle, Docker, or a separate Linux box.
 Clone this repo onto the Windows side:
 
 ```powershell
-git clone https://github.com/askysh/Frappe-w-WSL-on-Windows.git
+git clone https://github.com/askysh/frappe_wsl_dev_server.git
 cd "Frappe-w-WSL-on-Windows"
 ```
 
